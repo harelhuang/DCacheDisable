@@ -1,0 +1,1 @@
+cmd_/home/hht/Desktop/linux-driver/DCacheDisable/DCacheDisable.ko := aarch64-linux-gnu-ld -EL -r  -maarch64linux -T ./scripts/module-common.lds --build-id  -o /home/hht/Desktop/linux-driver/DCacheDisable/DCacheDisable.ko /home/hht/Desktop/linux-driver/DCacheDisable/DCacheDisable.o /home/hht/Desktop/linux-driver/DCacheDisable/DCacheDisable.mod.o ;  true
