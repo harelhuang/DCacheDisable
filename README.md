@@ -11,7 +11,11 @@ Usage: insmod = disable DCache while rmmod = enable DCache
 
 Detail: 
 
-I do it not to measure performance without DCache for fun but to resolve this controversial issue in TVM community. As a result, The consistency problem of vta in zcu 104 platform proved to be an internal logic bug in vta according to [RFC][VTA]A HLS C VTA bug
+I do it not to measure performance without DCache for fun but to resolve this controversial issue in TVM community. 
+
+As a result, The consistency problem of vta in zcu 104 platform have been proved to be an internal logic bug in vta according to [RFC][VTA]A HLS C VTA bug by our tvm effort.
+
+Here is the building process.
 
 My platform is cortex-a53, ubuntu18 started at EL2 and switched to EL1 and supported SMP on four cpu cores. Thus, I need to turn off multi-core to ensure L2-cache coherency. Thanks to the feature of cpu-hot-plug, I just run :
 ```
