@@ -13,9 +13,9 @@ Detail:
 
 I do it not to measure linux performance without DCache for fun but to resolve this controversial issue in TVM community. 
 
-As a result, The consistency problem of vta in Xilinx ZCU104 platform have been proved to be [an internal logic bug in vta](https://discuss.tvm.ai/t/rfc-vta-a-hls-c-vta-bug/6743).
+As a result, The consistency problem of vta in Xilinx ZCU104 platform has been proved to be [an internal logic bug in vta](https://discuss.tvm.ai/t/rfc-vta-a-hls-c-vta-bug/6743).
 
-Here is the building process.
+Here are some building details.
 
 My platform is cortex-a53, ubuntu18 started at EL2 and switched to EL1 and supported SMP on four cpu cores. Thus, I need to turn off multi-core to ensure L2-cache coherency. Thanks to the feature of cpu-hot-plug, I just execute :
 ```
