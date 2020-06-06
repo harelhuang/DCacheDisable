@@ -13,7 +13,7 @@ Detail:
 
 I do it not to measure performance without DCache for fun but to resolve this controversial issue in TVM community. 
 
-As a result, The consistency problem of vta in zcu 104 platform have been proved to be an internal logic bug in vta according to [RFC][VTA]A HLS C VTA bug by our tvm effort.
+As a result, The consistency problem of vta in zcu 104 platform have been proved to be [an internal logic bug in vta](https://discuss.tvm.ai/t/rfc-vta-a-hls-c-vta-bug/6743) by our tvm effort.
 
 Here is the building process.
 
