@@ -19,8 +19,8 @@ Here are some building details.
 
 My platform is cortex-a53, ubuntu18 started at EL2 and switched to EL1 and supported SMP on four cpu cores. Thus, I need to turn off multi-core to ensure L2-cache coherency. Thanks to the feature of cpu-hot-plug, I just execute :
 ```
-echo '0' > /sys/devices/system/cpu/cpu1/online,
-echo '0' > /sys/devices/system/cpu/cpu2/online,
+echo '0' > /sys/devices/system/cpu/cpu1/online
+echo '0' > /sys/devices/system/cpu/cpu2/online
 echo '0' > /sys/devices/system/cpu/cpu3/online
 ```
 then I execute `dmesg` to verify that multi-core has been turn off.
